@@ -10,8 +10,8 @@ options(dplyr.summarise.inform = FALSE)
 
 
 # Load data
-file = "pearl_v_5_5_5_Tier1_25g.csv"
-myData <- read.csv(file, skip = 2)
+file = "pelmo_v_6_6_4_Run_summary_and_results.xlsx"
+myData <- read_excel(file, "Full Results", skip = 2)
 datanames <- colnames(myData)
 
 # Define UI
